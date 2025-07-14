@@ -1,0 +1,24 @@
+Steps to Run the Playwright .NET Project in Visual Studio's Test Explorer
+
+Step 1: Open Your Playwright .NET Project in Visual Studio
+Launch Visual Studio (e.g., Visual Studio 2022).
+Go to File > Open > Project/Solution...
+Navigate to the directory of your Playwright .NET project and open its .sln (solution) file.
+If you cloned it from GitHub, ensure you've opened the correct .sln file that contains your test project.
+
+Step 2: Ensure Playwright .NET NuGet Packages Are Installed
+In the Solution Explorer (usually on the right side), right-click on your test project (not the solution) and select "Manage NuGet Packages...".
+Go to the "Installed" tab and verify that you have:
+Microsoft.Playwright
+Microsoft.Playwright.NUnit (if using NUnit for testing) or Microsoft.Playwright.MSTest (if using MSTest)
+Microsoft.NET.Test.Sdk (often installed by default for test projects)
+If any are missing, go to the "Browse" tab, search for them, and install them.
+
+Step 3: Build Your Project
+To ensure Visual Studio recognizes your tests, you need to build the project.
+Go to Build > Build Solution (or press Ctrl+Shift+B).
+This compiles your test code and makes the tests discoverable by the Test Explorer.
+
+Step 4: Open the Test Explorer Window
+Once the project is built, go to Test > Test Explorer.
+The Test Explorer window will usually appear as a tab, often next to the Solution Explorer or Output window.
